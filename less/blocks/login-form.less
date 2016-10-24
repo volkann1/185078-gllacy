@@ -1,0 +1,100 @@
+.login-form {
+	position: absolute;
+	z-index: 2;
+	top: 32px;
+	left: -184px;
+
+	display: none;
+
+	width: 277px;
+	padding-top: 4px;
+}
+
+.login-block:hover .login-form {
+	display: block;
+}
+.login-form__wrap {
+	display: flex;
+
+	padding-top: 20px;
+	padding-right: 17px;
+	padding-bottom: 6px;
+	padding-left: 19px;
+
+	color: @grey-20-2;
+	border-radius: 5px;
+	background: @white-97-2;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+
+	flex-wrap: wrap;
+	align-items: flex-start;
+}.login-form__email {
+	width: 100%;
+	margin-bottom: 20px;
+	padding-top: 9px;
+	padding-right: 14px;
+	padding-bottom: 9px;
+	padding-left: 14px;
+
+	color: @grey-60;
+	border: 1px solid @grey-83;
+	border-radius: 5px;
+	outline: none;
+
+	font-size: 14px;
+
+	.line-height(24, 14);
+}.login-form__password {
+	width: 100%;
+	margin-bottom: 20px;
+	padding-top: 9px;
+	padding-right: 14px;
+	padding-bottom: 10px;
+	padding-left: 14px;
+
+	color: @grey-60;
+	border: 1px solid @grey-83;
+	border-radius: 5px;
+	outline: none;
+
+	font-size: 14px;
+
+	.line-height(24, 14);
+}.login-form__help {
+	width: 120px;
+}.login-form__help-point {
+	position: relative;
+
+	display: inline-block;
+
+	margin-bottom: 0;
+
+	text-decoration: none;
+
+	color: @grey-20-2;
+
+	font-size: 13px;
+	line-height: 1.2px;
+	&::after {
+		position: absolute;
+		bottom: -6px;
+		left: 0;
+
+		display: block;
+
+		width: 100%;
+		height: 1px;
+
+		content: "";
+
+		background: rgba(0,0,0,0.3) ;
+	}
+	&:hover,
+	&:active {
+		color: @red-91-2;
+		&::after {
+			opacity: 0.3;
+			background: @red-93;
+		}
+	}
+}

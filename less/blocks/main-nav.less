@@ -1,0 +1,166 @@
+
+
+.main-nav__list {
+	display: flex;
+
+	margin: 0;
+	padding: 0;
+	padding-top: 28px;
+
+	list-style-type: none;
+}
+
+.main-nav__list-item {
+	margin-right: 0;
+
+	&--catalog {
+		position: relative;
+
+		&:hover {
+			.main-nav__sub-menu-wrap {
+				position: absolute;
+				z-index: 3;
+				top: 27px;
+				left: -8px;
+
+				display: block;
+
+				width: 143px;
+				padding-top: 5px;
+			}
+			.main-nav__link {
+				text-decoration: none;
+
+				color: @grey-20;
+				background: @white-97;
+			}
+		}
+	}
+}
+
+
+
+.main-nav__link {
+	padding: 4px 12px 6px;
+
+	text-decoration: none;
+
+	border-radius: 16px;
+
+	font-weight: 700;
+
+	.line-height(18, 16);
+
+	span {
+		box-shadow: inset 0 -1px 0 rgba(255,255,255,0.2);
+	}
+
+	&:hover {
+		text-decoration: none;
+
+		color: @grey-20;
+		background: @white-97;
+	}
+
+	&:active {
+		background: @white-93;
+		box-shadow: inset 0 2px 1px @grey-41;
+
+		span {
+			box-shadow: none;
+		}
+	}
+
+	&--active {
+		text-decoration: none;
+
+		background: @red-82;
+
+		span {
+			box-shadow: none;
+		}
+	}
+}
+
+.main-nav__sub-menu-wrap {
+	display: none;
+	&:hover {
+		position: absolute;
+		z-index: 3;
+		top: 27px;
+		left: -8px;
+
+		display: block;
+
+		width: 143px;
+		padding-top: 5px;
+	}
+}
+
+.main-nav__sub-menu {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 8px;
+
+	list-style-type: none;
+
+	color: @grey-20-2;
+	border-radius: 5px;
+	background: @white-97-2;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.main-nav__sub-link {
+	display: block;
+
+	padding-top: 6px;
+	padding-right: 19px;
+	padding-bottom: 6px;
+	padding-left: 19px;
+
+	text-decoration: none;
+
+	font-size: 14px;
+
+	.line-height (16, 14);
+
+	&[href]:hover {
+		background: @red-98;
+	}
+
+	&[href]:active {
+		background: @red-96;
+	}
+
+	&--new {
+		position: relative;
+
+		margin-bottom: 8px;
+
+		font-weight: 700;
+
+		&::after {
+			position: absolute;
+			bottom: -8px;
+			left: 6px;
+
+			display: block;
+
+			width: 128px;
+			height: 1px;
+
+			content: "";
+
+			background: @grey-82;
+		}
+	}
+
+	&--active {
+		color: #ffffff;
+		background: @red-82;
+	}
+}
+
+.main-nav__sub-item {
+	padding-top: 4px;
+}

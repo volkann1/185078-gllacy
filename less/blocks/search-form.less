@@ -1,0 +1,97 @@
+.search-form {
+	position: relative;
+
+	margin-right: 10px;
+
+	&:hover {
+		.search-form__search-field-wrap {
+			display: block;
+		}
+		.search-form__submit {
+			background: @white-97-2;
+
+			&::after {
+				background-position: -813px -10px;
+			}
+		}
+	}
+}
+
+.search-form__submit {
+	position: relative;
+
+	width: 33px;
+	height: 33px;
+
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	background: rgba(255,255,255,0.2);
+
+	font-size: 0;
+
+	&::after {
+		position: absolute;
+		top: 8px;
+		left: 8px;
+
+		display: block;
+
+		width: 17px;
+		height: 17px;
+
+		content: "";
+
+		background: url("../img/spritesheet.png") -776px -10px no-repeat;
+	}
+
+	&:hover {
+		background: @white-97-2;
+
+		&::after {
+			background-position: -813px -10px;
+		}
+	}
+}
+
+.search-form__search-field-wrap {
+	position: absolute;
+	z-index: 2;
+	top: 32px;
+	left: -309px;
+
+	display: none;
+
+	width: 341px;
+	padding-top: 4px;
+	&:hover {
+		display: block;
+	}
+}
+
+.search-form__search-field-inner {
+	padding-top: 20px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+
+	border-radius: 5px;
+	background: @white-97-2;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+.search-form__search-field {
+	width: 100%;
+	padding-top: 9px;
+	padding-right: 14px;
+	padding-bottom: 10px;
+	padding-left: 14px;
+
+	color: @grey-60;
+	border: 1px solid @grey-83;
+	border-radius: 5px;
+	outline: none;
+
+	font-size: 14px;
+
+	.line-height(24, 14);
+}

@@ -1,0 +1,50 @@
+.slide {
+	position: relative;
+
+	width: 33.333%;
+	padding-bottom: 34px;
+
+	text-align: center;
+	&--violet {
+		.slide__img-right {
+			top: 47px;
+			left: 553px;
+		}
+	}
+	&--brown {
+		.slide__img-right {
+			top: 42px;
+		}
+	}
+}
+
+.slide__img-left {
+	position: absolute;
+	z-index: 2;
+	top: 7px;
+	left: 249px;
+}
+
+.slide__img-right {
+	position: absolute;
+	z-index: 1;
+	top: 49px;
+	left: 564px;
+}
+
+.slide__title {
+	position: relative;
+	z-index: 3;
+
+	width: 707px;
+	margin: 0 auto;
+	padding-top: 313px;
+	padding-bottom: 33px;
+
+	text-align: center;
+	letter-spacing: -0.5px;
+
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1;
+}

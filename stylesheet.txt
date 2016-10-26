@@ -34,98 +34,104 @@
     background-position: -198px -10px;
 }
 
+.sprite-icon-down-focus {
+    width: 9px;
+    height: 5px;
+    background-position: -227px -10px;
+}
+
 .sprite-icon-fb {
     width: 32px;
     height: 32px;
-    background-position: -227px -10px;
+    background-position: -256px -10px;
 }
 
 .sprite-icon-hit {
     width: 61px;
     height: 61px;
-    background-position: -279px -10px;
+    background-position: -308px -10px;
 }
 
 .sprite-icon-iceCream {
     width: 49px;
     height: 49px;
-    background-position: -360px -10px;
+    background-position: -389px -10px;
 }
 
 .sprite-icon-instagram {
     width: 32px;
     height: 32px;
-    background-position: -429px -10px;
+    background-position: -458px -10px;
 }
 
 .sprite-icon-login {
     width: 21px;
     height: 19px;
-    background-position: -481px -10px;
+    background-position: -510px -10px;
 }
 
 .sprite-icon-login-hover {
     width: 21px;
     height: 19px;
-    background-position: -522px -10px;
+    background-position: -551px -10px;
 }
 
 .sprite-icon-love {
     width: 15px;
     height: 13px;
-    background-position: -563px -10px;
+    background-position: -592px -10px;
 }
 
 .sprite-icon-natural {
     width: 49px;
     height: 49px;
-    background-position: -598px -10px;
+    background-position: -627px -10px;
 }
 
 .sprite-icon-next {
     width: 9px;
     height: 14px;
-    background-position: -667px -10px;
+    background-position: -696px -10px;
 }
 
 .sprite-icon-prev {
     width: 9px;
     height: 14px;
-    background-position: -696px -10px;
+    background-position: -725px -10px;
 }
 
 .sprite-icon-rouble {
     width: 31px;
     height: 36px;
-    background-position: -725px -10px;
+    background-position: -754px -10px;
 }
 
 .sprite-icon-search {
     width: 17px;
     height: 17px;
-    background-position: -776px -10px;
+    background-position: -805px -10px;
 }
 
 .sprite-icon-search-hover {
     width: 17px;
     height: 17px;
-    background-position: -813px -10px;
+    background-position: -842px -10px;
 }
 
 .sprite-icon-temperature {
     width: 48px;
     height: 49px;
-    background-position: -850px -10px;
+    background-position: -879px -10px;
 }
 
 .sprite-icon-tiwitter {
     width: 33px;
     height: 32px;
-    background-position: -918px -10px;
+    background-position: -947px -10px;
 }
 
 .sprite-icon-vk {
     width: 32px;
     height: 32px;
-    background-position: -971px -10px;
+    background-position: -1000px -10px;
 }

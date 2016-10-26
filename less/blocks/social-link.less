@@ -1,0 +1,59 @@
+.social-link {
+	margin-right: 12px;
+}
+
+.social-link__source {
+	display: block;
+
+	width: 38px;
+	height: 38px;
+
+	border: 3px solid rgba(255,255,255,0.5);
+	border-radius: 50%;
+
+	font-size: 0;
+	&:hover {
+		border-color: rgba(255,255,255,0.7);
+		&:before {
+			opacity: 1;
+		}
+	}
+	&:active {
+		&::before {
+			box-shadow: inset 0 2px 1px #888888;
+		}
+	}
+	&::before {
+		display: block;
+
+		width: 32px;
+		height: 32px;
+
+		content: "";
+
+		opacity: 0.8;
+		border-radius: 50%;
+		background-image: url(../img/spritesheet.png);
+		background-repeat: no-repeat;
+	}
+	&--vk {
+		&::before {
+			background-position: -1000px -10px;
+		}
+	}
+	&--fb {
+		&::before {
+			background-position: -256px -10px;
+		}
+	}
+	&--insta {
+		&::before {
+			background-position: -458px -10px;
+		}
+	}
+	&--twitter {
+		&::before {
+			background-position: -947px -10px;
+		}
+	}
+}

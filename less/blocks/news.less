@@ -1,0 +1,49 @@
+.news {
+	width: 560px;
+	margin-right: 26px;
+	padding-top: 10px;
+	padding-right: 18px;
+	padding-bottom: 81px;
+	padding-left: 18px;
+
+	color: @grey-20-2;
+	border-radius: 14px;
+	background: #ffffff url("../img/bg-srawberry.jpg") -52px -225px no-repeat;
+}
+
+.news__title {
+	margin-bottom: 4px;
+
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.news__list {
+	.list-style-none;
+}
+
+.news__item {
+}
+
+.news__link {
+	display: block;
+
+	width: 300px;
+
+	text-decoration: none;
+	letter-spacing: -0.4px;
+
+	font-size: 24px;
+	font-weight: 700;
+
+	.line-height(30,24);
+	span {
+		box-shadow: inset 0 -2px @grey-21;
+	}
+	&:hover {
+		color: @red-91-2;
+		span {
+			box-shadow: inset 0 -2px fade(@red-93,30);
+		}
+	}
+}

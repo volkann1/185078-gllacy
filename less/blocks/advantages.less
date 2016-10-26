@@ -1,40 +1,84 @@
 .advantages {
+	display: flex;
+
 	width: 1146px;
 	margin: 0 auto;
+	margin-top: 7px;
+	margin-bottom: 40px;
+	padding-right: 18px;
+	padding-left: 18px;
 
 	color: @grey-20-2;
+	border-radius: 16px;
 	background: #e6d2a4 url("../img/bg-waffle.jpg") 0 0 repeat;
+
+	flex-wrap: wrap;
 }
 
 .advantages__title {
+	font-weight: 500;
 }
 
 .advantages__list {
+	display: flex;
+
+	.list-style-none;
+	flex-wrap: wrap;
 }
 
 .agvantages__item {
-}
+	position: relative;
 
-.agvantages__item.agvantages__item--temperature {
-}
+	width: 539px;
+	margin-right: 26px;
+	margin-bottom: 23px;
+	padding-left: 57px;
 
-.agvantages__item.agvantages__item--farming {
-}
+	&:nth-child(2n) {
+		margin-right: 0;
+	}
+	&::before {
+		position: absolute;
+		top: -13px;
+		left: 0;
 
-.agvantages__item.agvantages__item--natural {
-}
+		display: block;
 
-.agvantages__item.agvantages__item--technologies {
-}
+		content: "";
 
-.agvantages__item--technologies {
-}
+		background-image: url(../img/spritesheet.png);
+		background-repeat: no-repeat;
+	}
+	&--temperature {
+		&::before {
+			width: 48px;
+			height: 49px;
 
-.agvantages__item--natural {
-}
+			background-position: -879px -10px;
+		}
+	}
+	&--farming {
+		&::before {
+			width: 48px;
+			height: 49px;
 
-.agvantages__item--farming {
-}
+			background-position: -130px -10px;
+		}
+	}
+	&--natural {
+		&::before {
+			width: 49px;
+			height: 49px;
 
-.agvantages__item--temperature {
+			background-position: -627px -10px;
+		}
+	}
+	&--technologies {
+		&::before {
+			width: 49px;
+			height: 49px;
+
+			background-position: -389px -10px;
+		}
+	}
 }

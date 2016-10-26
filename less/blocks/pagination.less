@@ -1,0 +1,105 @@
+.pagination {
+	display: flex;
+
+	width: 1146px;
+	margin: 0;
+	margin: 0 auto;
+	padding: 0;
+	padding-bottom: 29px;
+
+	list-style-type: none;
+
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.pagination__item {
+	margin-right: 4px;
+	&--first {
+		margin-left: auto;
+	}
+}
+
+.pagination__link {
+	display: block;
+
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+
+	text-decoration: none;
+
+	border-radius: 50%;
+
+	font-size: 16px;
+	font-weight: 500;
+
+	.line-height(18,16);
+	&--active {
+		color: @grey-21;
+		background: #ffffff;
+	}
+	&[href]:hover {
+		background: rgba(255,255,255,0.2);
+	}
+	&[href]:active {
+		color: @grey-20-2;
+		background: #ffffff;
+	}
+}
+
+.pagination__next {
+	position: relative;
+
+	margin-left: 3px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	padding-left: 9px;
+	padding-left: 8px;
+
+	font-size: 0;
+	&::before {
+		position: absolute;
+		top: -6px;
+		left: 9px;
+
+		width: 9px;
+		height: 14px;
+
+		content: "";
+
+		background: url("../img/spritesheet.png") -696px -10px no-repeat;
+	}
+	&--desabled {
+		opacity: 0.2;
+	}
+}
+
+
+.pagination__prev {
+	position: relative;
+
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	padding-left: 9px;
+	padding-left: 8px;
+
+	font-size: 0;
+	&::before {
+		position: absolute;
+		top: -6px;
+		left: 0;
+
+		width: 9px;
+		height: 14px;
+
+		content: "";
+
+		background: url("../img/spritesheet.png") -725px -10px no-repeat;
+	}
+	&--desabled {
+		opacity: 0.2;
+	}
+}

@@ -11,7 +11,7 @@
 			background: @white-97-2;
 
 			&::after {
-				background-position: -813px -10px;
+				background-position: -842px -10px;
 			}
 		}
 	}
@@ -42,7 +42,7 @@
 
 		content: "";
 
-		background: url("../img/spritesheet.png") -776px -10px no-repeat;
+		background: url("../img/spritesheet.png") -805px -10px no-repeat;
 	}
 
 	&:hover {
@@ -70,6 +70,8 @@
 }
 
 .search-form__search-field-inner {
+	position: relative;
+
 	padding-top: 20px;
 	padding-right: 15px;
 	padding-bottom: 20px;
@@ -78,6 +80,10 @@
 	border-radius: 5px;
 	background: @white-97-2;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+.search-form__search-label {
+	top: 6px;
+	left: 29px;
 }
 .search-form__search-field {
 	width: 100%;
@@ -94,4 +100,16 @@
 	font-size: 14px;
 
 	.line-height(24, 14);
+
+	&:hover {
+		border: 1px solid fade(@grey-60-2,52);
+		box-shadow: 1px 1px 1px fade(@grey-60-2,52), -1px -1px 1px fade(@grey-60-2,52);
+	}
+	&:focus {
+		border: 1px solid fade(@blue-89,52);
+		box-shadow: 1px 1px 1px fade(@blue-89,52), -1px -1px 1px fade(@blue-89,52);
+		& + .search-form__search-label {
+			display: block;
+		}
+	}
 }

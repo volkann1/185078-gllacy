@@ -77,7 +77,7 @@ if (ymaps != null) {
         // Необходимо указать данный тип макета.
         iconLayout: "default#image",
         // Своё изображение иконки метки.
-        iconImageHref: "img/icon-pin.png",
+        iconImageHref: "../img/icon-pin.png",
         // Размеры метки.
         iconImageSize: [218, 142],
         // Смещение левого верхнего угла иконки относительно

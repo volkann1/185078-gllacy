@@ -52,6 +52,11 @@
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.13;
+
+	-webkit-appearance: none;
+	&::-ms-expand {
+		display: none;
+	}
 	&:hover {
 		color: @grey-20-2;
 	}
@@ -159,6 +164,8 @@
 }
 
 .filter__variants-wrap {
+	display: flex;
+
 	width: 419px;
 	padding-top: 8px;
 	padding-right: 6px;
@@ -167,6 +174,8 @@
 
 	border-radius: 18px;
 	background: rgba(248,247,244,0.2);
+
+	flex-wrap: wrap;
 	&--filling {
 		width: 707px;
 	}
@@ -192,7 +201,7 @@
 .filter__fat-label {
 	position: relative;
 
-	margin-right: 16px;
+	margin-right: 19px;
 	padding-left: 29px;
 
 	font-size: 16px;
@@ -250,7 +259,7 @@
 .filter__filling-label {
 	position: relative;
 
-	margin-right: 20px;
+	margin-right: 23px;
 	padding-left: 29px;
 
 	font-size: 16px;

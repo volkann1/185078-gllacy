@@ -9,9 +9,21 @@
 	display: flex;
 
 	width: 388px;
+	margin: 0;
+	padding: 0;
 	padding-top: 15px;
+	padding-left: 25px;
+
+	list-style-type: none;
 
 	flex-wrap: wrap;
+}
+
+.page-footer__links-block-item {
+	width: 50%;
+	&:nth-child(2n+1) {
+		width: 39%;
+	}
 }
 
 .page-footer__links-item {
@@ -44,9 +56,6 @@
 		}
 	}
 	&--providers {
-		margin-right: 32px;
-		margin-left: 25px;
-
 		font-weight: 700;
 		&::before {
 			position: absolute;
@@ -65,12 +74,5 @@
 			background-position: -592px -10px;
 			;
 		}
-	}
-	&--documents {
-		margin-right: 17px;
-	}
-	&--production {
-		margin-right: 44px;
-		margin-left: 25px;
 	}
 }

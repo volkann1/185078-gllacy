@@ -887,7 +887,7 @@ textarea {
   box-shadow: inset 0 2px 2px #942718;
 }
 .btn--login {
-  margin-right: 20px;
+  margin-right: 18px;
 }
 .btn--order-table {
   margin-right: 5px;
@@ -920,7 +920,7 @@ textarea {
   margin-right: 46px;
   margin-bottom: 22px;
   margin-left: 46px;
-  padding-right: 18px;
+  padding-right: 13px;
   padding-left: 16px;
 }
 .btn--mailing-block {
@@ -1387,7 +1387,7 @@ textarea {
 .mailing-block__email {
   width: 368px;
   margin-top: 1px;
-  margin-right: 9px;
+  margin-right: 8px;
   padding-top: 9px;
   padding-right: 12px;
   padding-bottom: 9px;
@@ -1471,8 +1471,18 @@ textarea {
 .page-footer__links-block {
   display: flex;
   width: 388px;
+  margin: 0;
+  padding: 0;
   padding-top: 15px;
+  padding-left: 25px;
+  list-style-type: none;
   flex-wrap: wrap;
+}
+.page-footer__links-block-item {
+  width: 50%;
+}
+.page-footer__links-block-item:nth-child(2n+1) {
+  width: 39%;
 }
 .page-footer__links-item {
   position: relative;
@@ -1499,8 +1509,6 @@ textarea {
   background: rgba(249, 172, 159, 0.3);
 }
 .page-footer__links-item--providers {
-  margin-right: 32px;
-  margin-left: 25px;
   font-weight: 700;
 }
 .page-footer__links-item--providers::before {
@@ -1514,13 +1522,6 @@ textarea {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -592px -10px;
-}
-.page-footer__links-item--documents {
-  margin-right: 17px;
-}
-.page-footer__links-item--production {
-  margin-right: 44px;
-  margin-left: 25px;
 }
 .social-links {
   display: flex;
@@ -1904,6 +1905,10 @@ textarea {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.13;
+  -webkit-appearance: none;
+}
+.filter__sorting::-ms-expand {
+  display: none;
 }
 .filter__sorting:hover {
   color: #323232;
@@ -1984,6 +1989,7 @@ textarea {
   left: 19px;
 }
 .filter__variants-wrap {
+  display: flex;
   width: 419px;
   padding-top: 8px;
   padding-right: 6px;
@@ -1991,6 +1997,7 @@ textarea {
   padding-left: 16px;
   border-radius: 18px;
   background: rgba(248, 247, 244, 0.2);
+  flex-wrap: wrap;
 }
 .filter__variants-wrap--filling {
   width: 707px;
@@ -2007,7 +2014,7 @@ textarea {
 }
 .filter__fat-label {
   position: relative;
-  margin-right: 16px;
+  margin-right: 19px;
   padding-left: 29px;
   font-size: 16px;
   font-weight: 500;
@@ -2045,7 +2052,7 @@ textarea {
 }
 .filter__filling-label {
   position: relative;
-  margin-right: 20px;
+  margin-right: 23px;
   padding-left: 29px;
   font-size: 16px;
   font-weight: 500;

@@ -15,7 +15,8 @@ var modalExtraLabel = document.querySelector('.modal-feedback__label--extra');
 var modalOpen = document.querySelector('.btn--feedback');
 var modalContent = document.querySelector('.modal-feedback');
 var overlay = document.querySelector('.overlay');
-if (modalContent != null) var modalClose = modalContent.querySelector('.modal-feedback__close');
+var ymaps;
+if (modalContent) var modalClose = modalContent.querySelector('.modal-feedback__close');
 
 function fieldValue(input, label) {
   input.addEventListener('change', function() {
@@ -30,7 +31,7 @@ function fieldValue(input, label) {
   });
 }
 
-if (modalOpen != null) {
+if (modalOpen) {
   modalOpen.addEventListener("click", function(event) {
     event.preventDefault();
     modalContent.classList.add("modal-content-show");
@@ -39,29 +40,29 @@ if (modalOpen != null) {
   });
 }
 
-if (overlay != null) overlay.addEventListener("click", function(event) {
+if (overlay) overlay.addEventListener("click", function(event) {
   event.preventDefault();
   modalContent.classList.remove("modal-content-show");
   modalContent.classList.remove("bounceInDown");
   overlay.classList.remove("modal-content-show");
 });
 
-if (modalClose != null) modalClose.addEventListener("click", function(event) {
+if (modalClose) modalClose.addEventListener("click", function(event) {
   event.preventDefault();
   modalContent.classList.remove("modal-content-show");
   modalContent.classList.remove("bounceInDown");
   overlay.classList.remove("modal-content-show");
 });
 
-fieldValue(searchField, searchLabel);
-fieldValue(loginEmail, loginEmailLabel);
-fieldValue(loginPass, loginPassLabel);
-fieldValue(mailingEmail, mailingEmailLabel);
-fieldValue(modalName, modalNameLabel);
-fieldValue(modalEmail, modalEmailLabel);
-fieldValue(modalExtra, modalExtraLabel);
+if (searchField && searchLabel) fieldValue(searchField, searchLabel);
+if (loginEmail && loginEmailLabel) fieldValue(loginEmail, loginEmailLabel);
+if (loginPass && loginPassLabel) fieldValue(loginPass, loginPassLabel);
+if (mailingEmail && mailingEmailLabel) fieldValue(mailingEmail, mailingEmailLabel);
+if (modalName && modalNameLabel) fieldValue(modalName, modalNameLabel);
+if (modalEmail && modalEmailLabel) fieldValue(modalEmail, modalEmailLabel);
+if (modalExtra && modalExtraLabel) fieldValue(modalExtra, modalExtraLabel);
 
-if (ymaps != null) {
+if (ymaps) {
   ymaps.ready(function() {
     var myMap = new ymaps.Map("map", {
         center: [59.939581230440595, 30.330457396881112],
